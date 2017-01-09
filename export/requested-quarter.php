@@ -13,7 +13,7 @@ if (array_key_exists('svg', $_REQUEST)) {
 
 $stat = "requested";
 $dur = "quarter";
-$title = "Requested Trend ($dur)";
+$title = "Requested Backlog ($dur)";
 $lines = 90*24;
 $short = "$stat-$dur";
 $pid = getmypid();
@@ -37,6 +37,11 @@ $plotcmds = <<<EOT
     set timefmt "%Y-%m-%d %H:%M:%S"
     set format x "%m/%d"
     set format y '%.0f'
+
+    set ytics format ' '
+    set y2tics
+    set link y2 via y
+
     set key off
     set grid
     set style fill transparent solid 0.5

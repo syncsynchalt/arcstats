@@ -29,11 +29,11 @@
     <ul class="list-unstyled">
         <li><a href="export/completed-quarter.php">Completed trend (quarter)</a></li>
         <li><a href="export/completed-week.php">Completed trend (week)</a></li>
-        <li><a href="export/requested-quarter.php">Requested trend (quarter)</a></li>
-        <li><a href="export/requested-week.php">Requested trend (week)</a></li>
+        <li><a href="export/requested-quarter.php">Request backlog (quarter)</a></li>
+        <li><a href="export/requested-week.php">Request backlog (week)</a></li>
         <li><a href="export/done.php">Done per day</a></li>
-        <li><a href="export/requests-count.php">Requests per day (by count)</a></li>
-        <li><a href="export/requests-seqs.php">Request per day (by seqs)</a></li>
+        <li><a href="export/requests-count.php">Requests (count per day)</a></li>
+        <li><a href="export/requests-seqs.php">Requests (seqs per day)</a></li>
     </ul>
     </div>
 </div>
