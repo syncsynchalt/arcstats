@@ -28,6 +28,8 @@
         <li><a href="store/lvs-export.php">LVS-export</a></li>
         <li><a href="store/ewl-zfs.php">EWL ZFS</a></li>
         <li><a href="store/lvs-zfs.php">LVS ZFS</a></li>
+        <li><a href="store/ba-latisys2.php">Drain latisys2</a></li>
+        <li><a href="store/ba-englewood.php">Drain englewood</a></li>
     </ul>
     </div>
 </div>
