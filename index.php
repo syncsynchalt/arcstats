@@ -5,13 +5,21 @@
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1,
+                               maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
 <title>Archiving Grapher</title>
+<style>
+.inset {
+    padding-left: 3em;
+}
+</style>
 </head>
 <body>
-<div class="container" style="max-width: 6000px">
-<div class="row">
+<div class="container-fluid">
+<div class="group">
     <h2>Storage</h2>
-    <div class="col-sm-offset-1 col-sm-11">
+    <div class="inset">
     <ul class="list-unstyled">
         <li><a href="store/ewl-export.php">EWL-export</a></li>
         <li><a href="store/ba-export.php">BA-export</a></li>
@@ -23,9 +31,9 @@
     </ul>
     </div>
 </div>
-<div class="row">
+<div class="group">
     <h2>Exports</h2>
-    <div class="col-sm-offset-1 col-sm-11">
+    <div class="inset">
     <ul class="list-unstyled">
         <li><a href="export/completed-quarter.php">Completed trend (quarter)</a></li>
         <li><a href="export/completed-week.php">Completed trend (week)</a></li>
@@ -37,18 +45,20 @@
     </ul>
     </div>
 </div>
-<div class="row">
+<div class="group">
     <h2>Workers</h2>
-    <div class="col-sm-offset-1 col-sm-11">
+    <div class="inset">
     <ul class="list-unstyled">
         <li><a href="workers/avgspeed-week.php">Average worker speed (week)</a></li>
         <li><a href="workers/avgspeed-month.php">Average worker speed (month)</a></li>
     </ul>
     </div>
 </div>
-<div class="row">
+<div class="group">
+    <div class="inset">
     <br>
     <p>last update <?= `ls ~mdriscoll/spurge/arc* | tail -n 1 | sed -e 's/.*arc_report_//' `; ?></p>
+    </div>
 </div>
 </div>
 </body>
