@@ -29,7 +29,7 @@ system("grep -r $stat: ~mdriscoll/old-spurge/ ~mdriscoll/spurge/ | "
 $pf = fopen($plotfile, "w");
 $plotcmds = <<<EOT
     set datafile separator ","
-    set terminal $type size 800,500
+    set terminal $type size 800,500 name ""
     set title font ",18"
     set title "$title"
     set xdata time

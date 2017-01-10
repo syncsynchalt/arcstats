@@ -26,7 +26,7 @@ system("~mdriscoll/Bin/speed-averages.pl | tail -n$lines > $csvfile");
 $pf = fopen($plotfile, "w");
 $plotcmds = <<<EOT
     set datafile separator ","
-    set terminal $type size 800,500
+    set terminal $type size 800,500 name ""
     set title font ",18"
     set title "$title"
     set xdata time

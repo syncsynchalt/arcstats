@@ -27,7 +27,7 @@ system("for i in ~mdriscoll/spurge/arc_report_*; do grep -H ' done ' \$i; done |
 $pf = fopen($plotfile, "w");
 $plotcmds = <<<EOT
     set datafile separator ","
-    set terminal $type size 800,500
+    set terminal $type size 800,500 name ""
     set title font ",18"
     set title "$title"
     set xdata time
