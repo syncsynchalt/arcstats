@@ -42,8 +42,8 @@
         <li><a href="export/requested-quarter.php">Request backlog (quarter)</a></li>
         <li><a href="export/requested-week.php">Request backlog (week)</a></li>
         <li><a href="export/done.php">Done per day</a></li>
-        <li><a href="export/requests-count.php">Requests (count per day)</a></li>
-        <li><a href="export/requests-seqs.php">Requests (seqs per day)</a></li>
+        <li><a href="export/requests-count.php">US Requests (count per day)</a></li>
+        <li><a href="export/requests-seqs.php">US Requests (seqs per day)</a></li>
     </ul>
     </div>
 </div>
@@ -51,8 +51,8 @@
     <h2>Workers</h2>
     <div class="inset">
     <ul class="list-unstyled">
-        <li><a href="workers/avgspeed-week.php">Average worker speed (week)</a></li>
-        <li><a href="workers/avgspeed-month.php">Average worker speed (month)</a></li>
+        <li><a href="workers/avgspeed-week.php">Average US worker speed (week)</a></li>
+        <li><a href="workers/avgspeed-month.php">Average US worker speed (month)</a></li>
     </ul>
     </div>
 </div>

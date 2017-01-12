@@ -12,7 +12,7 @@ if (array_key_exists('svg', $_REQUEST)) {
 }
 
 $rtype = "seqs";
-$title = "Requests by day ($rtype)";
+$title = "US Requests by day ($rtype)";
 $short = "req-$rtype";
 $pid = getmypid();
 
