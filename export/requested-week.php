@@ -36,7 +36,8 @@ $plotcmds = <<<EOT
     set title font ",18"
     set title "$title"
     set yrange [0:]
-    set xrange [$min-946684800:$max-946684800]
+    epoch_offset=946684800
+    set xrange [$min-epoch_offset:$max-epoch_offset]
     set xdata time
     set timefmt "%Y-%m-%d %H:%M:%S"
     set format x "%m/%d"

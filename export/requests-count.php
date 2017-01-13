@@ -43,14 +43,14 @@ $plotcmds = <<<EOT
     set yrange [0:*<200000000]
     unset mxtics
 
-    #set fit quiet
-    #set fit logfile '/dev/null'
-    #f(x)=a+b*((x-dday)/86400)+c*((x-dday)/86400)**2+d*((x-dday)/86400)**3
-    #dday=1456815600
-    #fit f(x) "$csvfile" using 1:2 via a,b,c,d
+    set fit quiet
+    set fit logfile '/dev/null'
+    f(x)=a+b*((x-dday)/86400)+c*((x-dday)/86400)**2+d*((x-dday)/86400)**3
+    epoch_offset=946684800
+    dday=1456815600-epoch_offset
+    fit f(x) "$csvfile" using 1:2 via a,b,c,d
 
-    #plot "$csvfile" using 1:2 with boxes lt 6, f(x) lt rgb "#888888" lw 2
-    plot "$csvfile" using 1:2 with boxes lt 6
+    plot "$csvfile" using 1:2 with boxes lt rgb "#8B0000", f(x) lt rgb "#888888" lw 2
 EOT;
 fwrite($pf, $plotcmds);
 fclose($pf);
