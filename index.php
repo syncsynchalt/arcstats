@@ -39,7 +39,20 @@
     <ul class="list-unstyled">
         <li><a href="export/completed-quarter.php">Completed trend (quarter)</a></li>
         <li><a href="export/completed-week.php">Completed trend (week)</a></li>
-        <li><a href="export/requested-quarter.php">Request backlog (quarter)</a></li>
+        <li><a href="export/requested-quarter.php">Request backlog (quarter)</a>
+            <small>
+                <?=`cat \$(ls ~mdriscoll/spurge/arc* | tail -n 1) |
+                perl -ne '\$p=1 if /All export requests/; \$p=0 if /^\$/; print if \$p' |
+                grep ' requested ' | wc -l `?>
+                /
+                <?=`cat \$(ls ~mdriscoll/spurge/arc* | tail -n 1) |
+                perl -ne '\$p=1 if /All export requests/;
+                    \$p=2 if \$p && /^ intern/; \$p=0 if \$p==2 && /^\$/; print if \$p==2' |
+                grep ' requested ' | wc -l `?>
+                /
+                <?=`cat \$(ls ~mdriscoll/spurge/arc* | tail -n 1) | grep ' requested ' | wc -l `?>
+            </small>
+        </li>
         <li><a href="export/requested-week.php">Request backlog (week)</a></li>
         <li><a href="export/done.php">Done per day</a></li>
         <li><a href="export/requests-count.php">US Requests (count per day)</a></li>
