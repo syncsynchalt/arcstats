@@ -26,6 +26,9 @@ $errlog = "/tmp/arcstat-$short-$pid-error.txt";
 system("grep -r $stat: ~mdriscoll/old-spurge/ ~mdriscoll/spurge/ | "
     . " perl -ne 's/.*_(\d{4})(\d\d)(\d\d)-(\d\d)(\d\d):.*: (\d+).*/".'$1-$2-$3 $4:$5:00,$6'."/ and print' | "
     . " sort | tail -n$lines > $csvfile");
+$min=chop(`date -d "\$(cat $csvfile | cut -f1 -d, | sort -n  | head -n 1)" +%s`);
+$max=chop(`date -d "\$(cat $csvfile | cut -f1 -d, | sort -nr | head -n 1)" +%s`);
+
 $pf = fopen($plotfile, "w");
 $plotcmds = <<<EOT
     set datafile separator ","
@@ -33,6 +36,7 @@ $plotcmds = <<<EOT
     set title font ",18"
     set title "$title"
     set xdata time
+    set xrange [$min-946684800:$max-946684800]
     set timefmt "%Y-%m-%d %H:%M:%S"
     set format x "%m/%d"
     set format y '%.0f'
