@@ -18,42 +18,34 @@
 <body>
 <div class="container-fluid">
 <div class="group">
-    <h2>Storage</h2>
-    <div class="inset">
-    <ul class="list-unstyled">
-        <li><a href="store/ewl-export.php">EWL-export</a></li>
-        <li><a href="store/ba-export.php">BA-export</a></li>
-        <li><a href="store/ewl-na1-export.php">EWL-NA1-export</a></li>
-        <li><a href="store/ewl-na2-export.php">EWL-NA2-export</a></li>
-        <li><a href="store/lvs-export.php">LVS-export</a></li>
-        <li><a href="store/ewl-zfs.php">EWL ZFS</a></li>
-        <li><a href="store/lvs-zfs.php">LVS ZFS</a></li>
-        <li><a href="store/ba-latisys2.php">Drain latisys2</a></li>
-        <li><a href="store/ba-englewood.php">Drain englewood</a></li>
-    </ul>
-    </div>
-</div>
-<div class="group">
     <h2>Exports</h2>
     <div class="inset">
     <ul class="list-unstyled">
         <li><a href="export/completed-quarter.php">Completed trend (quarter)</a></li>
         <li><a href="export/completed-week.php">Completed trend (week)</a></li>
-        <li><a href="export/requested-quarter.php">Request backlog (quarter)</a>
+        <li><a href="export/requested-quarter.php">Request backlog (quarter)</a></li>
+        <li><a href="export/requested-week.php">Request backlog (week)</a>
             <small>
-                <?=`cat \$(ls ~mdriscoll/spurge/arc* | tail -n 1) |
-                perl -ne '\$p=1 if /All export requests/; \$p=0 if /^\$/; print if \$p' |
-                grep ' requested ' | wc -l `?>
+                <span title="US requests"><?=
+                `cat \$(ls ~mdriscoll/spurge/arc* | tail -n 1) |
+                    perl -ne '\$p=1 if /All export requests/; \$p=0 if /^\$/; print if \$p' |
+                    grep ' requested ' | wc -l `
+                ?></span>
                 /
-                <?=`cat \$(ls ~mdriscoll/spurge/arc* | tail -n 1) |
-                perl -ne '\$p=1 if /All export requests/;
-                    \$p=2 if \$p && /^ intern/; \$p=0 if \$p==2 && /^\$/; print if \$p==2' |
-                grep ' requested ' | wc -l `?>
+                <span title="int'l requests"><?=
+                `cat \$(ls ~mdriscoll/spurge/arc* | tail -n 1) |
+                    perl -ne '\$p=1 if /All export requests/;
+                        \$p=2 if \$p && /^ intern/;
+                        \$p=0 if \$p==2 && /^\$/;
+                        print if \$p==2' |
+                    grep ' requested ' | wc -l `
+                ?></span>
                 /
-                <?=`cat \$(ls ~mdriscoll/spurge/arc* | tail -n 1) | grep ' requested ' | wc -l `?>
+                <span title="total requests"><?=
+                `cat \$(ls ~mdriscoll/spurge/arc* | tail -n 1) | grep ' requested ' | wc -l `
+                ?></span>
             </small>
         </li>
-        <li><a href="export/requested-week.php">Request backlog (week)</a></li>
         <li><a href="export/done.php">Done per day</a></li>
         <li><a href="export/requests-count.php">US Requests (count per day)</a></li>
         <li><a href="export/requests-seqs.php">US Requests (seqs per day)</a></li>
@@ -66,6 +58,22 @@
     <ul class="list-unstyled">
         <li><a href="workers/avgspeed-week.php">Average US worker speed (week)</a></li>
         <li><a href="workers/avgspeed-month.php">Average US worker speed (month)</a></li>
+    </ul>
+    </div>
+</div>
+<div class="group">
+    <h2>Storage</h2>
+    <div class="inset">
+    <ul class="list-unstyled">
+        <li><a href="store/ewl-na1-export.php">EWL-NA1-export</a></li>
+        <li><a href="store/ewl-na2-export.php">EWL-NA2-export</a></li>
+        <li><a href="store/lvs-export.php">LVS-export</a></li>
+        <li><a href="store/ewl-zfs.php">EWL ZFS</a></li>
+        <li><a href="store/lvs-zfs.php">LVS ZFS</a></li>
+        <li><a href="store/ewl-export.php">EWL-export</a></li>
+        <li><a href="store/ba-export.php">BA-export</a></li>
+        <li><a href="store/ba-latisys2.php">Drain latisys2</a></li>
+        <li><a href="store/ba-englewood.php">Drain englewood</a></li>
     </ul>
     </div>
 </div>
