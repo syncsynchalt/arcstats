@@ -32,7 +32,7 @@ $max=chop(`date -d "\$(cat $csvfile | cut -f1 -d, | sort -nr | head -n 1)" +%s`)
 $pf = fopen($plotfile, "w");
 $plotcmds = <<<EOT
     set datafile separator ","
-    set terminal $type size 800,500 name ""
+    set terminal $type size 800,600 name ""
     set title font ",18"
     set title "$title"
     set yrange [0:]
