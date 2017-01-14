@@ -13,7 +13,7 @@ if (array_key_exists('svg', $_REQUEST)) {
 
 $short = "lvs-export";
 $mount = "/mxl/msg_archive/deprov_export/switch";
-$title = "LVS Export";
+$title = "LVS ZFS Export";
 $pid = getmypid();
 
 $plotfile = "/tmp/arcstat-$short-$pid.gnuplot";

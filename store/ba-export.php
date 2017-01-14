@@ -13,7 +13,7 @@ if (array_key_exists('svg', $_REQUEST)) {
 
 $short = "ba-export";
 $mount = "BA-export";
-$title = "BlueArc Export";
+$title = "EWL BA5 Export";
 $pid = getmypid();
 
 $plotfile = "/tmp/arcstat-$short-$pid.gnuplot";

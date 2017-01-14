@@ -13,7 +13,7 @@ if (array_key_exists('svg', $_REQUEST)) {
 
 $short = "ewl-export";
 $mount = "/mxl/msg_export";
-$title = "EWL Export";
+$title = "EWL ZFS Export";
 $pid = getmypid();
 
 $plotfile = "/tmp/arcstat-$short-$pid.gnuplot";

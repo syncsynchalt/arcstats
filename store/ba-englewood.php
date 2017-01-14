@@ -13,7 +13,7 @@ if (array_key_exists('svg', $_REQUEST)) {
 
 $short = "ba-englewood";
 $mount = "englewood";
-$title = "BlueArc Drain (englewood)";
+$title = "Drain Progress — englewood";
 $pid = getmypid();
 
 $plotfile = "/tmp/arcstat-$short-$pid.gnuplot";

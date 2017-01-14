@@ -13,7 +13,7 @@ if (array_key_exists('svg', $_REQUEST)) {
 
 $short = "ba-latisys2";
 $mount = "latisys2";
-$title = "BlueArc Drain (latisys2)";
+$title = "Drain Progress — latisys2";
 $pid = getmypid();
 
 $plotfile = "/tmp/arcstat-$short-$pid.gnuplot";

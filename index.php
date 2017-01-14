@@ -64,16 +64,23 @@
 <div class="group">
     <h2>Storage</h2>
     <div class="inset">
+    <h5>active</h5>
     <ul class="list-unstyled">
-        <li><a href="store/ewl-na1-export.php">EWL-NA1-export</a></li>
-        <li><a href="store/ewl-na2-export.php">EWL-NA2-export</a></li>
-        <li><a href="store/lvs-export.php">LVS-export</a></li>
+        <li><a href="store/ewl-na1-export.php">EWL NA1 export</a></li>
+        <li><a href="store/ewl-na2-export.php">EWL NA2 export</a></li>
+        <li><a href="store/lvs-export.php">LVS ZFS export</a></li>
         <li><a href="store/ewl-zfs.php">EWL ZFS</a></li>
         <li><a href="store/lvs-zfs.php">LVS ZFS</a></li>
-        <li><a href="store/ewl-export.php">EWL-export</a></li>
-        <li><a href="store/ba-export.php">BA-export</a></li>
-        <li><a href="store/ba-latisys2.php">Drain latisys2</a></li>
-        <li><a href="store/ba-englewood.php">Drain englewood</a></li>
+    </ul>
+    <h5>inactive</h5>
+    <ul class="list-unstyled">
+        <li><a href="store/ewl-export.php">EWL ZFS export</a></li>
+        <li><a href="store/ba-export.php">EWL BA5 export</a></li>
+    </ul>
+    <h5>drainstore</h5>
+    <ul class="list-unstyled">
+        <li><a href="store/ba-latisys2.php">latisys2</a></li>
+        <li><a href="store/ba-englewood.php">englewood</a></li>
     </ul>
     </div>
 </div>
