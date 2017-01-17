@@ -6,8 +6,7 @@
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
     crossorigin="anonymous">
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1,
-                               maximum-scale=1, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="format-detection" content="telephone=no">
 <title>Archiving Grapher</title>
 <style>
