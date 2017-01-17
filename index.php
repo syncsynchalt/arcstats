@@ -58,6 +58,7 @@
     <ul class="list-unstyled">
         <li><a href="workers/avgspeed-week.php">Average US worker speed (week)</a></li>
         <li><a href="workers/avgspeed-month.php">Average US worker speed (month)</a></li>
+        <li><a href="workers/avgspeed-anz.php">Average ANZ worker speed (week)</a></li>
     </ul>
     </div>
 </div>
