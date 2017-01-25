@@ -69,6 +69,8 @@
     <ul class="list-unstyled">
         <li><a href="store/ewl-na1-export.php">EWL NA1 export</a></li>
         <li><a href="store/ewl-na2-export.php">EWL NA2 export</a></li>
+        <li><a href="store/lvs-na1-export.php">LVS NA1 export</a></li>
+        <li><a href="store/lvs-na2-export.php">LVS NA2 export</a></li>
         <li><a href="store/ewl-zfs.php">EWL ZFS</a></li>
         <li><a href="store/lvs-zfs.php">LVS ZFS</a></li>
     </ul>
