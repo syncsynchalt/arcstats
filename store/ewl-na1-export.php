@@ -21,7 +21,7 @@ $csvfile = "/tmp/arcstat-$short-$pid.csv";
 $output = "/tmp/arcstat-$short-$pid.svg";
 $errlog = "/tmp/arcstat-$short-$pid-error.txt";
 
-system("~mdriscoll/Bin/storereport.pl $mount | tail -n168 > $csvfile");
+system("~mdriscoll/Bin/storereport.pl $mount | tail -n168 | perl ./gapper.pl > $csvfile");
 $pf = fopen($plotfile, "w");
 $plotcmds = <<<EOT
     set datafile separator ","
@@ -34,7 +34,7 @@ $plotcmds = <<<EOT
     set format y '%.1s%c'
     set key off
     set grid
-    plot "$csvfile" using 1:2 with lines lw 2 lt 2
+    plot "$csvfile" using 1:(\$2) with lines lw 2 lt 2
 EOT;
 fwrite($pf, $plotcmds);
 fclose($pf);
