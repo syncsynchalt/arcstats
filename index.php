@@ -87,12 +87,7 @@
     </ul>
     </div>
 </div>
-<div class="group">
-    <div class="inset">
-    <br>
-    <p>last update <?= `ls ~mdriscoll/spurge/arc* | tail -n 1 | sed -e 's/.*arc_report_//' `; ?></p>
-    </div>
-</div>
+<p>last update <?= `ls ~mdriscoll/spurge/arc* | tail -n 1 | sed -e 's/.*arc_report_//' `; ?></p>
 </div>
 </body>
 </html>

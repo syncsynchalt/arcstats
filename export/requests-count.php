@@ -89,12 +89,13 @@ if ($type === 'pngcairo') {
     $f = fopen($output, "r");
     fpassthru($f);
 ?>
-    <br>
-    <small style="padding-left: 5em"><a href='<?=$selfurl?>?svg'>download as SVG</a></small>
-    <br>
-    <small style="padding-left: 5em"><a href='<?=$selfurl?>?png'>download as PNG</a></small>
-    <br>
-    <small style="padding-left: 5em">last update <?= `ls ~mdriscoll/spurge/arc* | tail -n 1 | sed -e 's/.*arc_report_//' `; ?></small>
+    <div style="padding-left: 3em">
+        <small><a href='<?=$selfurl?>?svg'>download as SVG</a></small>
+        <br>
+        <small><a href='<?=$selfurl?>?png'>download as PNG</a></small>
+        <br>
+        <small>last update <?= `ls ~mdriscoll/spurge/arc* | tail -n 1 | sed -e 's/.*arc_report_//' `; ?></small>
+    </div>
     </body>
     </html>
 <?php
