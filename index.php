@@ -28,6 +28,7 @@
         <li><a href="export/done.php">Done per day</a></li>
         <li><a href="export/requests-count.php">US Requests (count per day)</a></li>
         <li><a href="export/requests-seqs.php">US Requests (seqs per day)</a></li>
+        <li><a href="export/us-workers.php">US workers in progress</a></li>
     </ul>
     </div>
 </div>
