@@ -13,6 +13,9 @@
 .inset {
     padding-left: 3em;
 }
+.mt-1 {
+    margin-top: 1em;
+}
 </style>
 </head>
 <body>
@@ -24,10 +27,14 @@
         <li><a href="export/completed-quarter.php">Completed trend (quarter)</a></li>
         <li><a href="export/completed-week.php">Completed trend (week)</a></li>
         <li><a href="export/requested-quarter.php">Request backlog (quarter)</a></li>
+<!--
         <li><a href="export/requested-week.php">Request backlog (week)</a></li>
+-->
         <li><a href="export/done.php">Done per day</a></li>
+<!--
         <li><a href="export/requests-count.php">US Requests (count per day)</a></li>
         <li><a href="export/requests-seqs.php">US Requests (seqs per day)</a></li>
+-->
         <li><a href="export/us-workers.php">US workers in progress</a></li>
     </ul>
     </div>
@@ -38,36 +45,58 @@
     <ul class="list-unstyled">
         <li><a href="workers/avgspeed-week.php">Average US worker speed (week)</a></li>
         <li><a href="workers/avgspeed-month.php">Average US worker speed (month)</a></li>
+<!--
         <li><a href="workers/avgspeed-anz.php">Average ANZ worker speed (week)</a></li>
+-->
     </ul>
     </div>
 </div>
 <div class="group">
     <h2>Storage</h2>
-    <div class="inset">
-    <h5>active</h5>
-    <ul class="list-unstyled">
-        <li><a href="store/ewl-na1-export.php">EWL NA1 export</a></li>
-        <li><a href="store/ewl-na2-export.php">EWL NA2 export</a></li>
-        <li><a href="store/lvs-na1-export.php">LVS NA1 export</a></li>
-        <li><a href="store/lvs-na2-export.php">LVS NA2 export</a></li>
-        <li><a href="store/ewl-zfs.php">EWL ZFS</a></li>
-        <li><a href="store/lvs-zfs.php">LVS ZFS</a></li>
-    </ul>
-    <h5>drainstore</h5>
-    <ul class="list-unstyled">
-        <li><a href="store/ba-latisys2.php">latisys2</a></li>
-        <li><a href="store/ba-englewood.php">englewood</a></li>
-    </ul>
-    <h5>inactive</h5>
-    <ul class="list-unstyled">
-        <li><a href="store/lvs-export.php">LVS ZFS export</a></li>
-        <li><a href="store/ewl-export.php">EWL ZFS export</a></li>
-        <li><a href="store/ba-export.php">EWL BA5 export</a></li>
-    </ul>
+    <div style="max-width: 400px">
+    <div class="row">
+        <div class="col-xs-3">&nbsp;</div>
+        <div class="col-xs-5">ewl</div>
+        <div class="col-xs-4">lvs</div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-3">exp na1</div>
+        <div class="col-xs-5"><a href="store/ewl-na1-export.php">EWL NA1 export+mas</a></div>
+        <div class="col-xs-4"><a href="store/lvs-na1-export.php">LVS NA1 export</a></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">exp na2</div>
+        <div class="col-xs-5"><a href="store/ewl-na2-export.php">EWL NA2 export</a></div>
+        <div class="col-xs-4"><a href="store/lvs-na2-export.php">LVS NA2 export</a></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">exp zfs</div>
+        <div class="col-xs-5"><a href="store/ewl-export.php">EWL ZFS export</a></div>
+        <div class="col-xs-4"><a href="store/lvs-export.php">LVS ZFS export</a></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">exp ba</div>
+        <div class="col-xs-5"><a href="store/ba-export.php">EWL BA5 export</a></div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-3">mas zfs</div>
+        <div class="col-xs-5"><a href="store/ewl-zfs.php">Englewood-0</a></div>
+        <div class="col-xs-4"><a href="store/lvs-zfs.php">Denver-0</a></div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-3">draining</div>
+        <div class="col-xs-5"><a href="store/ba-latisys2.php">latisys2</a></div>
+    </div>
+    <div class="row">
+        <div class="col-xs-3">draining</div>
+        <div class="col-xs-5"><a href="store/ba-englewood.php">englewood</a></div>
+    </div>
     </div>
 </div>
-<p>last update <?= `ls ~mdriscoll/spurge/arc* | tail -n 1 | sed -e 's/.*arc_report_//' `; ?></p>
+<p class="mt-1">last update <?= `ls ~mdriscoll/spurge/arc* | tail -n 1 | sed -e 's/.*arc_report_//' `; ?></p>
 </div>
 </body>
 </html>
