@@ -31,7 +31,7 @@ $plotcmds = <<<EOT
     set xdata time
     set timefmt "%Y-%m-%d %H:%M:%S"
     set format x "%m/%d"
-    set format y '%.1s%c'
+    set format y '%.2s%c'
     set key off
     set grid
     plot "$csvfile" using 1:(\$2) with lines lw 2 lt 2

@@ -62,22 +62,22 @@
 
     <div class="row">
         <div class="col-xs-3">exp na1</div>
-        <div class="col-xs-5"><a href="store/ewl-na1-export.php">EWL NA1 export+mas</a></div>
-        <div class="col-xs-4"><a href="store/lvs-na1-export.php">LVS NA1 export</a></div>
+        <div class="col-xs-5"><a href="store/ewl-na1-export.php">EWL NA1 exp+mas</a></div>
+        <div class="col-xs-4"><a href="store/lvs-na1-export.php">LVS NA1 exp</a></div>
     </div>
     <div class="row">
         <div class="col-xs-3">exp na2</div>
-        <div class="col-xs-5"><a href="store/ewl-na2-export.php">EWL NA2 export</a></div>
-        <div class="col-xs-4"><a href="store/lvs-na2-export.php">LVS NA2 export</a></div>
+        <div class="col-xs-5"><a href="store/ewl-na2-export.php">EWL NA2 exp</a></div>
+        <div class="col-xs-4"><a href="store/lvs-na2-export.php">LVS NA2 exp</a></div>
     </div>
     <div class="row">
         <div class="col-xs-3">exp zfs</div>
-        <div class="col-xs-5"><a href="store/ewl-export.php">EWL ZFS export</a></div>
-        <div class="col-xs-4"><a href="store/lvs-export.php">LVS ZFS export</a></div>
+        <div class="col-xs-5"><a href="store/ewl-export.php">EWL ZFS exp</a></div>
+        <div class="col-xs-4"><a href="store/lvs-export.php">LVS ZFS exp</a></div>
     </div>
     <div class="row">
         <div class="col-xs-3">exp ba</div>
-        <div class="col-xs-5"><a href="store/ba-export.php">EWL BA5 export</a></div>
+        <div class="col-xs-5"><a href="store/ba-export.php">EWL BA5 exp</a></div>
     </div>
 
     <div class="row">

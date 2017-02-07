@@ -21,7 +21,7 @@ $output = "/tmp/arcstat-$short-$pid.svg";
 $errlog = "/tmp/arcstat-$short-$pid-error.txt";
 
 system("for i in ~mdriscoll/spurge/arc_report_*; do "
-    . " grep -HA 300 'Workers ordered by percent done' \$i "
+    . " grep -HA 300 'Workers ordered by percent done' \$i 2>/dev/null "
     . " | grep -m1 -- '-(.* row' ; done "
     . " | sed -e 's/.*arc_report_//;s/-(/,/;s/ .*//' > $csvfile");
 $pf = fopen($plotfile, "w");
