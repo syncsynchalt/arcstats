@@ -35,6 +35,8 @@
         <li><a href="export/requests-count.php">US Requests (count per day)</a></li>
         <li><a href="export/requests-seqs.php">US Requests (seqs per day)</a></li>
 -->
+        <li><a href="export/inprogress-quarter.php">Inprogress trend (quarter)</a></li>
+        <li><a href="export/inprogress-week.php">Inprogress trend (week)</a></li>
         <li><a href="export/us-workers.php">US workers in progress</a></li>
     </ul>
     </div>
