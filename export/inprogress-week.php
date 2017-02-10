@@ -41,6 +41,7 @@ $plotcmds = <<<EOT
     set timefmt "%Y-%m-%d %H:%M:%S"
     set format x "%m/%d"
     set format y '%.0f'
+    set yrange [0:]
     set key off
     set grid
     set style fill transparent solid 0.5

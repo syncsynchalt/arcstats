@@ -34,7 +34,7 @@ $plotcmds = <<<EOT
     set format x "%m/%d"
     set format y '%.0f'
     set yrange [0:]
-    #set key off
+    set key bottom right
     set grid
     plot "$csvfile" using 1:2 with lines lw 2 lt rgb "red"  title "EWL", \
                  '' using 1:3 with lines lw 2 lt rgb "blue" title "LVS"
