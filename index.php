@@ -78,17 +78,21 @@
         <div class="col-xs-5"><a href="store/ewl-export.php">EWL ZFS exp</a></div>
         <div class="col-xs-4"><a href="store/lvs-export.php">LVS ZFS exp</a></div>
     </div>
+<!--
     <div class="row">
         <div class="col-xs-3">exp ba</div>
         <div class="col-xs-5"><a href="store/ba-export.php">EWL BA5 exp</a></div>
     </div>
+-->
 
     <div class="row">
         <div class="col-xs-3">mas zfs</div>
-        <div class="col-xs-5"><a href="store/ewl-zfs.php">Englewood-0</a></div>
+        <div class="col-xs-5"><a href="store/ewl-zfs.php">Englewood-0</a>
+            <a href="store/ewl-zfs-diff.php">(diff)</a></div>
         <div class="col-xs-4"><a href="store/lvs-zfs.php">Denver-0</a></div>
     </div>
 
+<!--
     <div class="row">
         <div class="col-xs-3">draining</div>
         <div class="col-xs-5"><a href="store/ba-latisys2.php">latisys2</a></div>
@@ -97,6 +101,7 @@
         <div class="col-xs-3">draining</div>
         <div class="col-xs-5"><a href="store/ba-englewood.php">englewood</a></div>
     </div>
+-->
     </div>
 </div>
 <p class="mt-1">last update <?= `ls ~mdriscoll/spurge/arc* | tail -n 1 | sed -e 's/.*arc_report_//' `; ?></p>
