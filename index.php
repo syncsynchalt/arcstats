@@ -73,11 +73,13 @@
         <div class="col-xs-5"><a href="store/ewl-na2-export.php">EWL NA2 exp</a></div>
         <div class="col-xs-4"><a href="store/lvs-na2-export.php">LVS NA2 exp</a></div>
     </div>
+<!--
     <div class="row">
         <div class="col-xs-3">exp zfs</div>
         <div class="col-xs-5"><a href="store/ewl-export.php">EWL ZFS exp</a></div>
         <div class="col-xs-4"><a href="store/lvs-export.php">LVS ZFS exp</a></div>
     </div>
+-->
 <!--
     <div class="row">
         <div class="col-xs-3">exp ba</div>
@@ -89,7 +91,8 @@
         <div class="col-xs-3">mas zfs</div>
         <div class="col-xs-5"><a href="store/ewl-zfs.php">Englewood-0</a>
             <a href="store/ewl-zfs-diff.php">(diff)</a></div>
-        <div class="col-xs-4"><a href="store/lvs-zfs.php">Denver-0</a></div>
+        <div class="col-xs-4"><a href="store/lvs-zfs.php">Denver-0</a>
+            <a href="store/lvs-zfs-diff.php">(diff)</a></div>
     </div>
 
 <!--

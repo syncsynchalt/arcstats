@@ -12,8 +12,8 @@ if (array_key_exists('svg', $_REQUEST)) {
 }
 
 $short = "ewl-zfs-diff";
-$mount = "Englewood-0";
-$title = "EWL ZFS 1diff gain";
+$mount = "Denver-0";
+$title = "LVS ZFS 1diff gain";
 $pid = getmypid();
 
 $plotfile = "/tmp/arcstat-$short-$pid.gnuplot";
@@ -32,7 +32,7 @@ $plotcmds = <<<EOT
     set timefmt "%Y-%m-%d %H:%M:%S"
     set format x "%m/%d"
     set format y '%.0s%c/hr'
-    set yrange [0:30*1000*1000*1000]
+    set yrange [0:120*1000*1000*1000]
     set key top left
     set grid
 
