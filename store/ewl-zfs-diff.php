@@ -32,7 +32,7 @@ $plotcmds = <<<EOT
     set timefmt "%Y-%m-%d %H:%M:%S"
     set format x "%m/%d"
     set format y '%.0s%c/hr'
-    set yrange [0:30*1000*1000*1000]
+    set yrange [0:40*1000*1000*1000]
     set key top left
     set grid
 
