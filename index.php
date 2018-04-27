@@ -59,53 +59,17 @@
     <div style="max-width: 400px">
     <div class="row">
         <div class="col-xs-3">&nbsp;</div>
-        <div class="col-xs-5">ewl</div>
-        <div class="col-xs-4">lvs</div>
+        <div class="col-xs-3">ewl</div>
+        <div class="col-xs-3">vzn</div>
+        <div class="col-xs-3">lvs</div>
     </div>
 
     <div class="row">
         <div class="col-xs-3">MAS</div>
-        <div class="col-xs-5"><a href="store/ewl-mas.php">EWL MAS</a></div>
-        <div class="col-xs-4"><a href="store/lvs-mas.php">LVS MAS</a></div>
+        <div class="col-xs-3"><a href="store/ewl-mas.php">EWL MAS</a></div>
+        <div class="col-xs-3"><a href="store/vzn-mas.php">VZN MAS</a></div>
+        <div class="col-xs-3"><a href="store/lvs-mas.php">LVS MAS</a></div>
     </div>
-<!--
-    <div class="row">
-        <div class="col-xs-3">exp na1</div>
-        <div class="col-xs-5"><a href="store/ewl-na1-export.php">EWL NA1 exp+mas</a></div>
-        <div class="col-xs-4"><a href="store/lvs-na1-export.php">LVS NA1 exp</a></div>
-    </div>
-    <div class="row">
-        <div class="col-xs-3">exp na2</div>
-        <div class="col-xs-5"><a href="store/ewl-na2-export.php">EWL NA2 exp</a></div>
-        <div class="col-xs-4"><a href="store/lvs-na2-export.php">LVS NA2 exp</a></div>
-    </div>
-    <div class="row">
-        <div class="col-xs-3">exp zfs</div>
-        <div class="col-xs-5"><a href="store/ewl-export.php">EWL ZFS exp</a></div>
-        <div class="col-xs-4"><a href="store/lvs-export.php">LVS ZFS exp</a></div>
-    </div>
-    <div class="row">
-        <div class="col-xs-3">exp ba</div>
-        <div class="col-xs-5"><a href="store/ba-export.php">EWL BA5 exp</a></div>
-    </div>
-
-    <div class="row">
-        <div class="col-xs-3">mas zfs</div>
-        <div class="col-xs-5"><a href="store/ewl-zfs.php">Englewood-0</a>
-            <a href="store/ewl-zfs-diff.php">(diff)</a></div>
-        <div class="col-xs-4"><a href="store/lvs-zfs.php">Denver-0</a>
-            <a href="store/lvs-zfs-diff.php">(diff)</a></div>
-    </div>
-
-    <div class="row">
-        <div class="col-xs-3">draining</div>
-        <div class="col-xs-5"><a href="store/ba-latisys2.php">latisys2</a></div>
-    </div>
-    <div class="row">
-        <div class="col-xs-3">draining</div>
-        <div class="col-xs-5"><a href="store/ba-englewood.php">englewood</a></div>
-    </div>
--->
     </div>
 </div>
 <p class="mt-1">last update <?= `ls ~mdriscoll/spurge/arc* | tail -n 1 | sed -e 's/.*arc_report_//' `; ?></p>
